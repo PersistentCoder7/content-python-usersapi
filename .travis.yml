@@ -2,7 +2,7 @@ dist: focal
 language: python
 services: docker
 
-before_install: bash docker-init.sh
+before_install: bash docker_init.sh
 
 script: docker-compose exec api python -m pytest "src/tests"
 
